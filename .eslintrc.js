@@ -7,6 +7,8 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'plugin:prettier/recommended',
+    'prettier/@typescript-eslint',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -19,6 +21,7 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
+    'prettier', 
   ],
   rules: {
     'no-use-before-define': 'off',
@@ -31,6 +34,7 @@ module.exports = {
     ],
     'react/prop-types': 'off',
     'spaced-comment': ['error', 'always', { markers: ['/ <reference'] }],
+    'prettier/prettier': 'error', 
   },
   settings: {
     'import/resolver': {
